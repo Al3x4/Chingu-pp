@@ -152,7 +152,7 @@
 }
 
 .form-container .slider {
-    background: #161a1a;
+    background: transparent;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -214,7 +214,7 @@
 .form-container .dropdown {
     position: relative;
     display: inline-block;
-    background: #161a1a;
+    background: transparent;
     cursor: pointer;
     transition: .4s;
     border-radius: 50px;
@@ -341,7 +341,7 @@
     padding: 0;
     position: relative;
     display: inline-block;
-    background: #161a1a;
+    background: transparent;
     cursor: pointer;
     transition: .4s;
     box-sizing: border-box;
