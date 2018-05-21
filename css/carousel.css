@@ -135,30 +135,58 @@
     content: ">";
   }
 
+  /*image overlay START*/
   .lantern {
-    position:absolute;
-		top: 25px;
-		left: 25px;
+    position:fixed;
+    bottom: 10%;
+    left: 10%;
+    max-height: 60%;
+    max-width: 60%;
+		z-index: 100;
+  }
+
+  .lantern2 {
+    position: fixed;
+    bottom: 20%;
+    right: 20%;
+    max-height: 30%;
+    max-width: 30%;
 		z-index: 2;
   }
 
   .blossom2 {
-    position:absolute;
-		top: 15px;
-		left: 15px;
-		z-index: 2;
+    position:fixed;
+		bottom: 20%;
+    left: 20%;
+    max-height: 30%;
+    max-width: 30%;
+		z-index: 100;
   }
 
   .blossom1 {
-    position: absolute;;
-		top: 25px;
-		left: 25px;
+    position: fixed;
+    bottom: 20%;
+    right: 20%;
+    width: 300px;
 		z-index: 2;
   }
 
   .balloon {
-    position:absolute;
-		top: 25px;
-		left: 25px;
+    position: fixed;
+    bottom: 25%;
+    right: 20%;
+    max-height: 30%;
+    max-width: 30%;
+		z-index: 100;
+  }
+
+  .balloon1 {
+    position: fixed;
+    bottom: 25%;
+    left: 30%;
+    max-height: 20%;
+    max-width: 20%;
 		z-index: 2;
   }
+
+  /*image overlay END */
