@@ -46,15 +46,30 @@
       <span>SHOW ME</span>
       <label class="switch" for="checkbox">
         <input type="checkbox" id="checkbox" />
-        <div class="slider round"></div> 
+        <div class="slider round">
+          <span id="events">Events</span>
+          <span id="weather">Weather</span>
+        </div> 
+
       </label>
+
       <span>IN</span>
-      <input type="text">
+
+      <div class="dropdown">
+      <input class="dropdown-toggle" type="text">
+      <div class="dropdown-text">Account</div>
+      <ul class="dropdown-content">
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Log out</a></li>
+      </ul>
+    </div>
+
     </div>
 
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
