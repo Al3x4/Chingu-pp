@@ -108,19 +108,28 @@
   padding: 10%;
   margin: 0 auto;
   position: absolute;
-  top: 80vh;
+  top: 50vh;
   z-index: 50;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  .form-container {
+    flex-direction: column;
+    align-items: center;    
+  }  
+}
+
+.form-container>* {
+  margin: 10px;
+}
 
 .form-container > span {
   display: inline-block;
   height: 40px;
   vertical-align: top;
-  margin: 0 20px;
 }
 
 .form-container .switch {
@@ -309,7 +318,6 @@
 
 .form-container button {
     padding: 0;
-    margin: 0;
     position: relative;
     display: inline-block;
     background: #161a1a;
