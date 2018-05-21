@@ -105,14 +105,14 @@
   font-size: 26px;
   color: #fff;
   width: 100%;
-  padding: 10%;
   margin: 0 auto;
-  position: absolute;
-  top: 60vh;
+  position: fixed;
+  top: 70vh;
   z-index: 50;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 @media screen and (max-width: 900px) {
