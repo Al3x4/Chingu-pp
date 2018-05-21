@@ -189,7 +189,7 @@
   }
 
 
-.form-container  .dropdown {
+.form-container .dropdown {
     position: relative;
     display: inline-block;
     width: 132px;
@@ -199,36 +199,51 @@
     border: 1px solid #fff;
     border-radius: 50px;
     vertical-align: top;
+    text-align: center;
+    width: 150px;
   }
 
 .form-container .dropdown-text {
     color: #fff;
-      font-family: inherit;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 12px;
-  line-height: 40px;
-  letter-spacing: 2px;
-  vertical-align: top;
-  display: inline-block;
-    width: 150px;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    vertical-align: top;
+    display: inline-block;
+    
   }
 
 .form-container .dropdown-text:after {
     position: absolute;
-    right: 6px;
-    top: 15px;
+    right: 20px;
+    top: 18px;
     content: '';
     width: 0px;
     height: 0px;
     border-style: solid;
     border-width: 5px 4px 0 4px;
-    border-color: #555 transparent transparent transparent;
+    border-color: #ffffff transparent transparent transparent;
   }
 
 .form-container .dropdown-text,
-.dropdown-content a {
-    color: #ffffff;
+.dropdown-content li {
+    color: #fff;
+    font-family: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    vertical-align: top;
+    display: block;
+  }
+.form-container .dropdown-content li:hover {
+    color: #161a1a;
+    font-weight: bold;
+
   }
 
 .form-container .dropdown-toggle {
@@ -264,11 +279,9 @@
     opacity: 0;
     visibility:hidden;
     border-radius: 3px;
-    text-indent: 10px;
     line-height: 32px;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    width: 140px;
+    background: #cfcf36;
+    width: 150px;
   }
 
 .form-container .dropdown-content a {

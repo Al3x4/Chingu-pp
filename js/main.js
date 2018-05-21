@@ -104,5 +104,14 @@ $(function() {
     }
   });
 
+  //Form functions
+  let dropdownItem = $('.form-container .dropdown-content li'); 
+  let dropdownMain = $('.form-container .dropdown-text')[0];
+
+  dropdownItem.click(function(){
+    console.log(this);
+    dropdownMain.innerHTML = this.innerHTML;
+  })
+
 });
 
