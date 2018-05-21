@@ -134,3 +134,31 @@
   .control.next:after {
     content: ">";
   }
+
+  .lantern {
+    position:absolute;
+		top: 25px;
+		left: 25px;
+		z-index: 2;
+  }
+
+  .blossom2 {
+    position:absolute;
+		top: 15px;
+		left: 15px;
+		z-index: 2;
+  }
+
+  .blossom1 {
+    position: absolute;;
+		top: 25px;
+		left: 25px;
+		z-index: 2;
+  }
+
+  .balloon {
+    position:absolute;
+		top: 25px;
+		left: 25px;
+		z-index: 2;
+  }
