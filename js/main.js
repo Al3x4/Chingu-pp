@@ -107,11 +107,14 @@ $(function() {
   //Form functions
   let dropdownItem = $('.form-container .dropdown-content li'); 
   let dropdownMain = $('.form-container .dropdown-text')[0];
+  let dropdownContent = $('.dropdown-content')[0];
 
-  dropdownItem.click(function(){
-    console.log(this);
+  //update selection text with selected text
+  dropdownItem.click(function() {
     dropdownMain.innerHTML = this.innerHTML;
-  })
+    console.log(dropdownContent.setAttribute('visibility', 'hidden'));
+  });
+
 
 });
 
