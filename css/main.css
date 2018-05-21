@@ -104,11 +104,17 @@
   font-family: 'Open Sans', sans-serif;
   font-size: 26px;
   color: #fff;
-  width: 800px;
-  max-width: 70%;
+  width: 100%;
+  padding: 10%;
   margin: 0 auto;
-
+  position: absolute;
+  top: 80vh;
+  z-index: 50;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
 
 .form-container > span {
   display: inline-block;
@@ -126,7 +132,7 @@
 
 .form-container .switch input {
     display:none;
-  }
+}
 
 .form-container .slider {
     background: #161a1a;
@@ -195,11 +201,13 @@
     background: #161a1a;
     cursor: pointer;
     transition: .4s;
-    border: 1px solid #fff;
     border-radius: 50px;
     vertical-align: top;
     text-align: left;
+    box-sizing: border-box;
+    border: 1px solid #fff;
     width: 150px;
+    height: 40px;
   }
 
 .form-container .dropdown-text {
@@ -302,18 +310,18 @@
 .form-container button {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     position: relative;
     display: inline-block;
     background: #161a1a;
     cursor: pointer;
     transition: .4s;
-    /*border: 1px solid #fff;*/
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    width: 150px;
+    height: 40px;
     border-radius: 50px;
     vertical-align: top;
     text-align: center;
-    width: 150px;
-    height: 40px;
     color: #fff;
     font-family: inherit;
     text-transform: uppercase;
@@ -322,6 +330,28 @@
     line-height: 40px;
     letter-spacing: 2px;
     vertical-align: top;
+    overflow: hidden;
+}
+
+.form-container button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 100%;
+  z-index: -1;
+  transform: translate3d(-50%,-50%,0) rotate(-45deg);
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background: #cfcf36;
+  transition: all .4s ease-in;
+}
+.form-container button:hover::before {
+  transform: translateZ(0) rotate(0deg);
+}
+.form-container button:hover {
+  background: transparent;
 }
 
 .form-container button:focus {
