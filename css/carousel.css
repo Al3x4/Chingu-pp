@@ -1,5 +1,5 @@
 .carousel-container {
-    height: 18em;
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -7,7 +7,7 @@
   }
   
   .carousel {
-    height: 18em;
+    height: 100vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -16,7 +16,7 @@
   
   .item {
     cursor: pointer;
-    height: 18em;
+    height: 100vh;
       left: 50%;
     list-style: none;
     opacity: 0;
